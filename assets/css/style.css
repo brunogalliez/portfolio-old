@@ -29,6 +29,21 @@ body {
 	color: #5a5a5a;
 }
 
+button {
+	background: transparent;
+	border: 0;
+	margin-left:8px;
+}
+button svg {
+	width: 40px;
+	height: 40px;
+	color:#000;
+	vertical-align: middle;
+}
+span#copy-email {
+	border-bottom: 3px dashed #000;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Work Sans', sans-serif;
 	font-weight: 300;
@@ -424,9 +439,14 @@ h2
 	}
 	#h h3 {
 		font-size:2.2em;
-		line-height: 1.2;
+		line-height: 1.25;
 	}
 	#h h3 a { border-bottom: 2px solid black; }
+	#h span#copy-email { border-bottom: 2px dashed black; word-break: break-all;}
+	button svg {
+		width: 28px;
+		height: 28px;
+	}
 	#sep {
 		min-height: 480px;
 	}
