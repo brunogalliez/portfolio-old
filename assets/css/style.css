@@ -28,20 +28,6 @@ body {
 	margin: 0; 
 	color: #5a5a5a;
 }
-button {
-	background-color:transparent;
-	border: 0;
-	margin-left:8px;
-}
-button svg {
-	width: 40px;
-	height: 40px;
-	color:#000;
-	vertical-align: middle;
-}
-span#copy-email {
-	border-bottom: 3px dashed #000;
-}
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Work Sans', sans-serif;
@@ -144,6 +130,19 @@ input {
 	background-color: #fff;
 	-webkit-transition: background-color 0.2s;
 	transition: background-color 0.2s;
+}
+
+span#copy-email {
+	font-size: inherit;
+	background-color: transparent;
+	padding: 0;
+	line-height: inherit;
+	border: 0;
+	min-height: initial;
+	margin-bottom: 0;
+	width: auto;
+	border-bottom: 3px dashed #000;
+	width: 640px;
 }
 
 .subscribe-input {
@@ -432,19 +431,74 @@ h2
 	border-bottom: 0;
 }
 
+.tooltip {
+	position: relative;
+	display: inline-block;
+	opacity: 1;
+	font-size: inherit;
+	line-height: inherit;
+  }
+
+.tooltip button {
+	background-color:transparent;
+	border: 0;
+	margin-left:8px;
+}
+  .tooltip button svg {
+	width: 40px;
+	height: 40px;
+	color:#000;
+	vertical-align: middle;
+}
+  
+  .tooltip .tooltiptext {
+	visibility: hidden;
+	width: 150px;
+	background-color: #000;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px;
+	position: absolute;
+	z-index: 1;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -75px;
+	opacity: 0;
+	transition: opacity 0.3s;
+	font-size: 12px;
+	line-height: auto;
+  }
+  
+  .tooltip .tooltiptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #000 transparent transparent transparent;
+  }
+
+  .tooltip:hover .tooltiptext {
+	visibility: visible;
+	opacity: 1;
+  }
+
 @media only screen and (max-width: 599px) {
 	#h { 
 		min-height: 480px;
 	}
 	#h h3 {
-		font-size:2.2em;
+		font-size:2.3em;
 		line-height: 1.25;
 	}
 	#h h3 a { border-bottom: 2px solid black; }
-	#h span#copy-email { border-bottom: 2px dashed black; word-break: break-all;}
-	button svg {
-		width: 28px;
-		height: 28px;
+	#h span#copy-email { border-bottom: 2px dashed black; word-break: break-all; font-size: inherit; line-height: inherit; display: inline;}
+	.tooltip button svg {
+		width: 28px !important;
+		height: 28px !important;
 	}
 	#sep {
 		min-height: 480px;

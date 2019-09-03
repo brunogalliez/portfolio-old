@@ -11,10 +11,20 @@
 		
 })(jQuery);
 
-function copyToClipboard(element) {
-	var $temp = $("<input>");
-	$("body").append($temp);
-	$temp.val($(element).text()).select();
-	document.execCommand("copy");
-	$temp.remove();
+function copyToClipboard() {
+	var copyText = document.getElementById("copy-email");
+	var textArea = document.createElement("textarea");
+    textArea.value = copyText.textContent;
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand("Copy");
+    textArea.remove();
+	
+	var tooltip = document.getElementById("emailTooltip");
+	tooltip.innerHTML = "✔ Copied " + textArea.value;
+  }
+  
+  function outFunc() {
+	var tooltip = document.getElementById("emailTooltip");
+	tooltip.innerHTML = "Copy to clipboard";
   }
