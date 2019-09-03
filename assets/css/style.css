@@ -491,8 +491,8 @@ h2
 		min-height: 480px;
 	}
 	#h h3 {
-		font-size:2.3em;
-		line-height: 1.25;
+		font-size:2em;
+		line-height: 1.2;
 	}
 	#h h3 a { border-bottom: 2px solid black; }
 	#h span#copy-email { border-bottom: 2px dashed black; word-break: break-all; font-size: inherit; line-height: inherit; display: inline;}
