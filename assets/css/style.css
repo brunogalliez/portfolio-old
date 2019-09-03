@@ -495,7 +495,7 @@ h2
 		line-height: 1.2;
 	}
 	#h h3 a { border-bottom: 2px solid black; }
-	#h span#copy-email { border-bottom: 2px dashed black; word-break: break-all; font-size: inherit; line-height: inherit; display: inline;}
+	#h span#copy-email { border-bottom: 2px dashed black; font-size: inherit; line-height: inherit; display: inline;}
 	.tooltip button svg {
 		width: 28px !important;
 		height: 28px !important;
