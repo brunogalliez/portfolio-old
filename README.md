@@ -1,2 +1,2 @@
 # portfolio
-Portfolio of my Design works and writing thoughts
+Portfolio of my design works
